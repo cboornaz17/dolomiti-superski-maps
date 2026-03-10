@@ -134,37 +134,33 @@
 
     <script>
         const pdfMap = {
-            1: "public/01-val-gardena.pdf",
-            2: "public/02-seiser-alm.pdf",
+            1: "public/01-cortina-dampezzo.pdf",
+            2: "public/02-kronplatz-plan-de-corones.pdf",
             3: "public/03-alta-badia.pdf",
-            4: "public/04-arabba-marmolada.pdf",
+            4: "public/04-val-gardena.pdf",
             5: "public/05-val-di-fassa-carezza.pdf",
-            6: "public/06-cortina-dampezzo.pdf",
-            7: "public/07-civetta.pdf",
-            8: "public/08-tre-cime.pdf",
-            9: "public/09-kronplatz-plan-de-corones.pdf",
+            6: "public/06-arabba-marmolada.pdf",
+            7: "public/07-tre-cime.pdf",
+            8: "public/08-val-di-fiemme-obereggen.pdf",
+            9: "public/09-san-martino-di-castrozza.pdf",
             10: "public/10-plose.pdf",
-            11: "public/11-val-di-fiemme-obereggen.pdf",
-            12: "public/12-san-martino-di-castrozza.pdf",
-            13: "public/13-gitschberg-jochtal.pdf",
-            14: "public/14-alpe-lusia-san-pellegrino.pdf"
+            11: "public/11-alpe-lusia-san-pellegrino.pdf",
+            12: "public/12-civetta.pdf"
         };
 
         const resorts = [
-            { id: 1, name: "Val Gardena", terrain: "All abilities, diverse, Sellaronda access", apres: "Bustling, lively", tags: ["advanced", "family", "apres"] },
-            { id: 2, name: "Seiser Alm", terrain: "Family-friendly, beginner paradise, large plateau", apres: "Quiet, family-focused", tags: ["family"] },
+            { id: 1, name: "Cortina d'Ampezzo", terrain: "All levels, fragmented areas, Olympic venue", apres: "Chic nightlife, fashionable", tags: ["advanced", "family", "apres"] },
+            { id: 2, name: "Kronplatz / Plan de Corones", terrain: "Wide groomers, modern lifts, 50% easy", apres: "Active bars, popular", tags: ["family", "apres"] },
             { id: 3, name: "Alta Badia", terrain: "Easy cruising, gourmet focus, limited expert", apres: "Excellent mountain huts, gourmet", tags: ["family", "apres"] },
-            { id: 4, name: "Arabba Marmolada", terrain: "Steep & challenging, expert terrain, Marmolada glacier", apres: "Limited, low-key", tags: ["advanced"] },
+            { id: 4, name: "Val Gardena / Seiser Alm", terrain: "All abilities, diverse, Sellaronda access", apres: "Bustling, lively", tags: ["advanced", "family", "apres"] },
             { id: 5, name: "Val di Fassa / Carezza", terrain: "Beginner-friendly, sunny, scenic", apres: "Moderate", tags: ["family"] },
-            { id: 6, name: "Cortina d'Ampezzo", terrain: "All levels, fragmented areas, Olympic venue", apres: "Chic nightlife, fashionable", tags: ["advanced", "family", "apres"] },
-            { id: 7, name: "Civetta", terrain: "Varied for all, great scenery, family-friendly", apres: "Low-key", tags: ["advanced", "family"] },
-            { id: 8, name: "Tre Cime", terrain: "Extreme & intermediate, steepest Italy run (71%)", apres: "Quiet, nature-focused", tags: ["advanced"] },
-            { id: 9, name: "Kronplatz / Plan de Corones", terrain: "Wide groomers, modern lifts, 50% easy", apres: "Active bars, popular", tags: ["family", "apres"] },
-            { id: 10, name: "Plose / Brixen", terrain: "Long valley runs, all levels, sunny", apres: "Low-key", tags: ["family", "advanced"] },
-            { id: 11, name: "Val di Fiemme / Obereggen", terrain: "Intermediate focused, 5 linked areas", apres: "Moderate", tags: ["family"] },
-            { id: 12, name: "San Martino di Castrozza", terrain: "Family-friendly, glacier skiing, beginner excellent", apres: "Good variety, upmarket", tags: ["family", "advanced"] },
-            { id: 13, name: "Gitschberg Jochtal", terrain: "All levels, family-friendly, modern", apres: "Family-friendly", tags: ["family"] },
-            { id: 14, name: "Alpe Lusia / San Pellegrino", terrain: "Balanced mix, beginner-friendly, great dining", apres: "Good mountain dining", tags: ["family", "apres"] }
+            { id: 6, name: "Arabba Marmolada", terrain: "Steep & challenging, expert terrain, Marmolada glacier", apres: "Limited, low-key", tags: ["advanced"] },
+            { id: 7, name: "3 Zinnen Dolomites", terrain: "Extreme & intermediate, steepest Italy run (71%)", apres: "Quiet, nature-focused", tags: ["advanced"] },
+            { id: 8, name: "Val di Fiemme / Obereggen", terrain: "Intermediate focused, 5 linked areas", apres: "Moderate", tags: ["family"] },
+            { id: 9, name: "San Martino di Castrozza", terrain: "Family-friendly, glacier skiing, beginner excellent", apres: "Good variety, upmarket", tags: ["family", "advanced"] },
+            { id: 10, name: "Valle Isarco / Eisacktal", terrain: "Long valley runs, all levels, sunny", apres: "Low-key", tags: ["family", "advanced"] },
+            { id: 11, name: "Alpe Lusia / San Pellegrino", terrain: "Balanced mix, beginner-friendly, great dining", apres: "Good mountain dining", tags: ["family", "apres"] },
+            { id: 12, name: "Civetta", terrain: "Varied for all, great scenery, family-friendly", apres: "Low-key", tags: ["advanced", "family"] }
         ];
 
         let currentFilter = 'all';
